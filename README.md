@@ -21,3 +21,8 @@
 
 ## ms08067_smbrc.py(msf&python联动)
 ![https://github.com/wpsec/Some-python-scripts/blob/main/image/smb.gif](https://github.com/wpsec/Some-python-scripts/blob/main/image/smb.gif)
+
+
+## calculator.py(计算器)
+
+![image](https://github.com/wpsec/Some-python-scripts/blob/main/image/jsq.png)
