@@ -1,12 +1,11 @@
 from PySide2.QtWidgets import QApplication, QMainWindow, QPushButton, QPlainTextEdit, QComboBox, QMessageBox
 
 
-
 class Calculator():
 	def count(self):
 		info = self.textEdit.toPlainText()
 		info2 = self.textEdit2.toPlainText()
-		if ((info == '') or (info2 == '')):
+		if ((info == '') or (info2 == '') or (not info.isdigit()) or (not info2.isdigit())):
 			self.textEdit3.setPlainText('请输入数值')
 		else:
 			info = info.replace(' ','')
@@ -24,7 +23,7 @@ class Calculator():
 
 	def __init__(self):
 		self.window = QMainWindow()
-		self.window.resize(700,120)
+		self.window.resize(700,150)
 		self.window.move(700,400)
 		self.window.setWindowTitle('计算器 by wpsec')
 
